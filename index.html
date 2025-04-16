@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Team meeting minutes for Pomodoro Timer Brainstorm" />
+  <title>Meeting Minutes | Pomodoro Timer First Brainstorm</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <h1>Pomodoro Timer First Brainstorm</h1>
+    <h2>Meeting Topic: Brainstorming/Planning</h2>
+    <h3>Date: April 15, 2025</h3>
+    <nav>
+      <p>Navigate to:</p>
+      <ul>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#unfinished_business">Unfinished Business</a></li>
+        <li><a href="#new_business">New Business</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#form">Feedback Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="attendance">
+      <h2>Attendance</h2>
+      <ul>
+        <li><strong>Danielle (Leader)</strong></li>
+        <li><b>SpongeBob</b></li>
+        <li><b>Squidward</b></li>
+        <li><b>Mr. Krabs</b></li>
+        <li><i>Patrick (absent)</i></li>
+      </ul>
+    </section>
+
+    <section id="agenda">
+      <h2>Meeting Agenda</h2>
+      <ol>
+        <li>Figure out when team members are available</li>
+        <li>Come up with initial plans</li>
+        <li>Assign individual tasks</li>
+        <li>Set a date for next meeting & goals to be done by then</li>
+      </ol>
+    </section>
+
+    <section id="unfinished_business">
+      <h2>Unfinished Business</h2>
+      <p>We <em>still</em> need to determine our working schedule since some members missed the meeting (Patrick!).</p>
+    </section>
+
+    <section id="new_business">
+      <h2>New Business</h2>
+      <div>
+        <p><span style="font-weight:bold;">SpongeBob</span> thinks we should introduce custom themes to the app.</p>
+        <p><span>Mr. Krabs</span> wants to look into the idea of monetizing the app!</p>
+      </div>
+      <hr />
+    </section>
+
+    <section id="images">
+      <h2>Images Presented</h2>
+      <p>SpongeBob's Idea for App Theme</p>
+      <a href="bikinibottom.jpg" target="_blank">
+        <img src="bikinibottom.jpg" alt="Diagram of proposed Pomodoro Timer architecture" />
+      </a>
+      <details>
+        <summary>Click here to see!</summary>
+        <p>Audio of SpongeBob's Idea</p>
+        <audio controls>
+          <source src="spongebobaudio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <p>Video of SpongeBob's Idea</p>
+        <video width="320" height="240" controls>
+          <source src="spongebobvideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </details>
+    </section>
+
+    <section id="form">
+      <h2>Team Feedback Form</h2>
+      <form>
+        <fieldset>
+          <legend>Feedback Preferences</legend>
+          <p>
+            Name: <input type="text" name="username" placeholder="Enter your name" required />
+          </p>
+          <p>
+            Date Submitted: <input type="date" name="submittedDate" required />
+          </p>
+          <p>
+            Cats or Dogs?<br />
+            <input type="radio" name="pet" value="cats" required /> Cats<br />
+            <input type="radio" name="pet" value="dogs" /> Dogs
+          </p>
+          <p>
+            Or choose contact method from the dropdown:<br />
+            <select name="contactDropdown">
+              <option value="">--Select one--</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+              <option value="slack">Slack</option>
+            </select>
+          </p>
+          <p>
+            Rate your day:<br />
+            <input list="dayRating" name="dayRatingInput" placeholder="e.g., Good" />
+            <datalist id="dayRating">
+              <option value="Amazing!!" />
+              <option value="Good" />
+              <option value="Alright" />
+              <option value="Bad" />
+              <option value="HORRIBLE!" />
+            </datalist>
+          </p>
+          <p>
+            Enter Feedback:<br />
+            <textarea name="comments" rows="4" cols="50" placeholder="Type your feedback here..." required></textarea>
+          </p>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>End of Meeting Notes</p>
+  </footer>
+</body>
+</html>
