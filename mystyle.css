@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');  /* import font */
 
 :root {
-    --bg-color: hsl(208, 100%, 97%);
+    --bg-color: hsl(208, 100%, 97%); /* mainly color variables */
     --text-color: #033e6b;
     --accent-color: #4da6ff;
     --border-color: #b3d9ff;
@@ -114,7 +114,7 @@ section#agenda {
 
 section#new_business {
     background-color: color-mix(in srgb, rgb(255, 252, 245) 70%, white 30%);
-    border-left: 5mm solid rgb(128, 179, 230); /* Approximate fallback */
+    border-left: 5mm solid rgb(128, 179, 230);
     border: 1px solid #b3e0ff;
     border-radius: 8px;
     padding: 1rem;
