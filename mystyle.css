@@ -113,8 +113,8 @@ section#agenda {
 }
 
 section#new_business {
-    background: color-mix(in srgb, rgb(255, 252, 245) 70%, white 30%);
-    border-left: 5mm solid color(display-p3 0.5 0.7 0.9);
+    background-color: color-mix(in srgb, rgb(255, 252, 245) 70%, white 30%);
+    border-left: 5mm solid rgb(128, 179, 230); /* Approximate fallback */
     border: 1px solid #b3e0ff;
     border-radius: 8px;
     padding: 1rem;
