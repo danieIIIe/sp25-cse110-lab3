@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+:root {
+    --bg-color: hsl(208, 100%, 97%);
+    --text-color: #033e6b;
+    --accent-color: #4da6ff;
+    --border-color: #b3d9ff;
+    --highlight-color: #e6f4ff;
+    --padding-standard: 1.5rem;
+    --font-main: 'Segoe UI', Roboto, sans-serif;
+    --fallback-text: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color, var(--fallback-text));
+    font-family: var(--font-main);
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Emilys Candy', cursive;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24pt;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2, h3 {
+    font-size: 2em;
+}
+
+a[href^="https://"] {
+    color: rgb(13, 9, 202);
+}
+
+a:hover {
+    color: rgb(50, 50, 100);
+}
+
+h1 + h2 {
+    margin-top: 20px;
+}
+
+h1 ~ p {
+    color: #666;
+}
+
+.button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header, section, footer {
+    margin: 20px auto 20px auto;   /* shorthand */
+    margin-top: 1in;         /* longhand */
+    margin-right: 10px;
+    margin-bottom: 1in;
+    margin-left: 10px;
+
+    padding: 15px 10px 15px 10px;    /* shorthand */
+    padding-top: 0.5cm;     /* longhand */
+    padding-right: 10px;
+    padding-bottom: 0.5cm;
+    padding-left: 10px;
+
+    border: 2px solid var(--accent-color);    /* shorthand */
+    border-radius: 8px;
+    background-color: #f5fbff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+footer {
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+section#agenda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-items: stretch;
+}
+
+section#new_business {
+    background: color-mix(in srgb, rgb(255, 252, 245) 70%, white 30%);
+    border-left: 5mm solid color(display-p3 0.5 0.7 0.9);
+    border: 1px solid #b3e0ff;
+    border-radius: 8px;
+    padding: 1rem;
+    color: rgb(0, 51, 102);
+}
+
+#header {
+    background-color: #033e6b;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    min-width: 150px;
+}
+
+.hidden {
+    display: none;
+}
+
+header > h1 {
+    color: rgb(99, 139, 199);
+}
+
+article div p {
+    font-size: 16px;
+    color: #333;
+}
+
+section:has(.highlight) {
+    border: 2px solid #5992be;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section#agenda {
+        grid-template-columns: 1fr;
+    }
+}
